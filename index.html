@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Audio Player</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player">
+            <div class="music_player_albom cover ">
+                <img class="coverimg " id="coverimg" src="" style="width: 250px;  height: 250px;" alt="">
+                <div></div>
+            </div>
+            <div class="music_player_singer song">
+             <h4 id="title"></h4>
+
+             <i class="fa-regular fa-heart"></i>
+            </div>
+
+            
+            <audio id="myAudio">
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+
+            <div class="progress_Duration" style="width: 95%;">
+                <div class="beginningTime" id="beginningTime"></div>
+                <input type="range" class="progressD" name="" id="duration" value="0" step="1" min="" max="">
+                <div class="endTime" id="endTime"></div>
+            </div>
+
+            <div class="musiv_player_control buttons">
+                <span class="random" id="random"><i class="fa-solid fa-repeat white "></i></span>
+                <span class="prev" id="prev"><i class="fa-solid fa-backward-step white btn "></i></span>
+                <span class="play" ><i class="fa-solid fa-play white btn pla playimg" id="play"></i><img style="width:20px;" id="pause-img" src="./pause-svgrepo-com.svg" alt="" class="stop"></span>
+                <span class="next" id="nextButton"><i class="fa-solid fa-forward-step white btn"></i></span> 
+                <span><i class="fa-solid fa-list white" ></i></span>          
+            </div>
+            <div class="music_player_timer progress_container">
+                  <span><i class="fa-solid fa-volume-high" style="color:#fff "  id="mute"></i></span>
+                  <div class="progress" style="width: 80%;">
+                    <input type="range" name="" id="volume" value="100" minlength="0" maxlength="100" ></div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
